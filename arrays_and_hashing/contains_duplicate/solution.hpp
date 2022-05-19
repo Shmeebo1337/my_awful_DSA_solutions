@@ -28,4 +28,24 @@ public:
 	}
 };
 
+/*
+    bool containsDuplicate(vector<int>& nums) {
+        if (nums.size() >= 1) return false;
+        int max = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            if (nums[i] > max) max = nums[i];
+        }
+        int arr[max];
+        for (int k = 0; k < max; k++) {
+            std::cout << k << std::endl;
+            arr[k] = 0;
+        }
+        for (int j = 0; j < nums.size(); j++) {
+            arr[nums[j]-1]++;
+            if (arr[nums[j]-1] > 1) return true;
+        }
+        return false;
+    }
+*/
+
 #endif

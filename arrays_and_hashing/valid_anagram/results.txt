@@ -1,0 +1,7 @@
+Run 1:
+    Runtime: 14 ms, faster than 48.32% of C++ online submissions for Valid Anagram.
+    Memory Usage: 7.3 MB, less than 46.96% of C++ online submissions for Valid Anagram.
+
+Run 2:
+    Runtime: 7 ms, faster than 85.23% of C++ online submissions for Valid Anagram.
+    Memory Usage: 7.4 MB, less than 46.96% of C++ online submissions for Valid Anagram.

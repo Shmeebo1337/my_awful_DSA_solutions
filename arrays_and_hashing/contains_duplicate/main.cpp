@@ -6,14 +6,8 @@
 int main() {
 	Solution mySolution;
 	std::vector<int> test = {1, 2, 3, 4};
-	//bool answer = mySolution.containsDuplicate(test);
-	bool answer = mySolution.containsDuplicateExponential(test);
-	/*
-	if (answer) {
-		std::cout << "Correct" << std::endl;
-	} else {
-		std::cout << "Incorrect" << std::endl;
-	}*/
+	bool answer = mySolution.containsDuplicate(test);
+	//bool answer = mySolution.containsDuplicateExponential(test);
 	assert(answer==true);
 	return 0;
 }
