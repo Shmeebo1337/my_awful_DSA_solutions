@@ -42,17 +42,13 @@ void Stack<T>::resize(void) {
     bufferCursor = 0;
     newBufferCursor = 0;
 
-    print((int) *current);
     current = &data[ (max/2) ];
-    print((int) *current);
 }
 
 template <class T>
 void Stack<T>::add(T _data) {
     if (current == &data[max]) {
-        std::cout << "At max" << std::endl;
         resize();
-        std::cout << "Resized" << std::endl;
     }
     *current = _data;
     current++;
