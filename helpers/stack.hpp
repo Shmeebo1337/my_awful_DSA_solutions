@@ -1,6 +1,7 @@
 #ifndef STACK_HPP
 #define STACK_HPP
 #include "myprint.hpp"
+#include "assert.h"
 
 template <class T>
 class Stack {
@@ -16,7 +17,7 @@ class Stack {
         data = new T[max];
         current = &data[0];
     }
-    ~Stack() { delete [] data; current = 0;};
+    ~Stack() { delete [] data; current = 0;}
     void resize(void);
     void add(T);
     T pop(void);
@@ -41,9 +42,9 @@ void Stack<T>::resize(void) {
     bufferCursor = 0;
     newBufferCursor = 0;
 
-    print(*current);
+    print((int) *current);
     current = &data[ (max/2) ];
-    print(*current);
+    print((int) *current);
 }
 
 template <class T>
@@ -51,6 +52,7 @@ void Stack<T>::add(T _data) {
     if (current == &data[max]) {
         std::cout << "At max" << std::endl;
         resize();
+        std::cout << "Resized" << std::endl;
     }
     *current = _data;
     current++;

@@ -13,10 +13,5 @@ int main() {
     stack.pop();
     std::cout << stack.getSize() << std::endl;
 
-    for (int i = 0; i < 15; i++) {
-        std::cout << ((char) (97 + i)) << std::endl;
-        stack.add((char) (97 + i));
-    }
-
     return 0;
 }
